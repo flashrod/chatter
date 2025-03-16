@@ -151,6 +151,4 @@ For production deployment, consider:
 - Adding a database for persistent storage
 - Setting up load balancing for high availability
 
-## License
 
-This project is licensed under the MIT License.
