@@ -1,4 +1,4 @@
-# Live Event Chatroom Platform
+# CHATTER
 
 A real-time communication platform for live events, allowing users to join event sessions, send messages, and interact with other participants in real time.
 
