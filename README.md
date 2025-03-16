@@ -10,7 +10,7 @@ A real-time communication platform for live events, allowing users to join event
 - Participant status updates
 - Typing indicators
 - REST API for event data
-- Simple HTML/JavaScript frontend example
+- Modern React frontend with dark mode UI
 
 ## Project Structure
 
@@ -26,8 +26,15 @@ A real-time communication platform for live events, allowing users to join event
 │   ├── README.md           # Backend documentation
 │   └── server.js           # Main server file
 │
-└── frontend/               # Frontend example
-    ├── index.html          # Simple HTML/JS example
+└── frontend/               # React frontend
+    ├── public/             # Static files
+    ├── src/                # Source code
+    │   ├── components/     # React components
+    │   ├── contexts/       # React contexts
+    │   ├── App.js          # Main App component
+    │   ├── index.js        # Entry point
+    │   └── index.css       # Global styles
+    ├── package.json        # Frontend dependencies
     └── README.md           # Frontend documentation
 ```
 
@@ -48,6 +55,13 @@ cd backend
 npm install
 ```
 
+3. Install frontend dependencies:
+
+```bash
+cd frontend
+npm install
+```
+
 ### Running the Application
 
 1. Start the backend server:
@@ -57,17 +71,22 @@ cd backend
 npm run dev
 ```
 
-2. Open the frontend example:
+2. Start the frontend development server:
 
 ```bash
-# Simply open frontend/index.html in your browser
+cd frontend
+npm start
 ```
+
+3. Open your browser to http://localhost:3000
 
 ## Usage
 
-1. Open the frontend example in your browser
-2. Enter a username and event ID
-3. Start chatting with other participants in the same event
+1. Enter a username and event ID on the login screen
+2. Start chatting with other participants in the same event
+3. View the list of participants in the sidebar
+4. See typing indicators when others are typing
+5. Leave the event using the logout button
 
 ## API Documentation
 
@@ -94,6 +113,27 @@ npm run dev
 - `userLeft` - A user left the event
 - `userTyping` - A user is typing
 - `eventHistory` - Event history (messages and participants)
+
+## Screenshots
+
+![Login Screen](https://example.com/login-screen.png)
+![Chat Room](https://example.com/chat-room.png)
+
+## Technologies Used
+
+### Backend
+
+- Node.js
+- Express
+- Socket.IO
+- Moment.js
+
+### Frontend
+
+- React
+- Material-UI
+- Socket.IO Client
+- Styled Components
 
 ## Scalability Considerations
 
